@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /*Poppins Google Fonts*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="p-8">
+        <div class="container mx-auto">
+            <!-- daisy ui -->
+            <div class="navbar justify-between flex-col md:flex-row lg:flex-row bg-base-100">
+                <div class="navbar-start flex-1">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#" class="text-base text-black font-semibold">Home</a></li>
+                        <li><a href="#" class="text-base text-black font-semibold">Shop</a></li>
+                        <li><a href="#" class="text-base text-black font-semibold">About</a></li>
+                        <li><a href="#" class="text-base text-black font-semibold">Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl">
+                    <img src="images/Logo.png" alt="">
+                  </a>
+                </div>
+
+                <div class="navbar-center hidden flex-1 lg:flex flex-col">
+                  <ul class="menu menu-horizontal gap-9 lg:flex-nowrap px-1">
+                    <li><a href="#" class="text-base text-black font-semibold">Home</a></li>
+                    <li><a href="#" class="text-base text-black font-semibold">Shop</a></li>
+                    <li><a href="#" class="text-base text-black font-semibold">About</a></li>
+                    <li><a href="#" class="text-base text-black font-semibold">Contact</a></li>
+                  </ul>
+                </div>
+
+                <div class="flex flex-1 gap-2 lg:gap-5 justify-end mt-3 lg:mt-0">
+                    <a href="#"><img src="images/user.png" alt=""></a>
+                    <a href="#"><img src="images/search.png" alt=""></a>
+                    <a href="#"><img src="images/heart.png" alt=""></a>
+                    <a href="#"><img src="images/shopping-cart.png" alt=""></a>
+                </div>
+
+            </div>            
+        </div>
+        
+            <!-- Hero Section -->
+        <div class="hero min-h-screen bg-base-200 md:bg-[url('images/background.png')] bg-cover bg-left bg-no-repeat">
+               <div class="container mx-auto">
+                <div class="max-w-xl h-auto p-5 hero-content bg-[#FFF3E3] md:relative lg:relative top-20 lg:top-16 lg:left-[58%] flex-col lg:flex-row">
+                    <div class="p-5">
+                        <h4 class="text-base text-[#333333] font-semibold">New Arrival!</h4>
+                      <h1 class="text-3xl font-bold text-[#B88E2F]">Discover Our New Collection</h1>
+                      <p class="py-6 font-medium text-base lg:text-lg text-[#333333]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                      <button class="btn h-0 bg-[#B88E2F] text-white text-base px-8 py-8 uppercase rounded-none flex-nowrap hover:text-amber-500">Get Started</button>
+                    </div>
+                  </div>
+               </div>
+        </div>
+
+    </header>
+    <main>
+      <section class="container mx-auto my-12">
+        <div class="text-center">
+          <h2 class="text-3xl font-extrabold">
+            Browse The Range
+          </h2>
+          <p class="text-[#666666] text-xl font-normal mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Card Section -->
+        <div class="flex flex-col md:flex-wrap lg:flex-row gap-5 justify-around pt-8">
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/living.png" alt="Living" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Living</h2>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/dining.png" alt="Dining" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Dining</h2>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="images/bedroom.png" alt="Bedroom" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Bedroom</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto">
+        <div class="text-center">
+          <h2 class="text-3xl font-extrabold my-20">Our Products</h2>
+        </div>
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between items-center">
+
+          <div class="card bg-base-100 shadow-sm">
+            <figure><img src="images/image_1.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#3A3A3A] text-2xl font-semibold">Syntherine</h2>
+              <p class="text-base font-medium text-[#898989]">Stylish Cafe Chair</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-[#3A3A3A] font-semibold">BDT 25000/-</p> 
+                <p class="text-base text-[#B0B0B0] font-normal"><s>BDT 29000/-</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-sm">
+            <figure><img src="images/image_2.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#3A3A3A] text-2xl font-semibold">Laviosa</h2>
+              <p class="text-base font-medium text-[#898989]">Stylish Cafe Chair</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-[#3A3A3A] font-semibold">BDT 22000/-</p> 
+                <p class="text-base text-[#B0B0B0] font-normal"><s>BDT 28000/-</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-sm">
+            <figure><img src="images/image_3.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#3A3A3A] text-2xl font-semibold">Lolito</h2>
+              <p class="text-base font-medium text-[#898989]">Luxary big sofa</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-[#3A3A3A] font-semibold">BDT 27000/-</p> 
+                <p class="text-base text-[#B0B0B0] font-normal"><s>BDT 35000/-</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-sm">
+            <figure><img src="images/image_4.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#3A3A3A] text-2xl font-semibold">Respira</h2>
+              <p class="text-base font-medium text-[#898989]">Outdoor Bar Table & Tool</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-[#3A3A3A] font-semibold">BDT 21000/-</p> 
+                <p class="text-base text-[#B0B0B0] font-normal"><s>BDT 27000/-</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-sm">
+            <figure><img src="images/image_5.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#3A3A3A] text-2xl font-semibold">Grifo</h2>
+              <p class="text-base font-medium text-[#898989]">Night Lamp</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-[#3A3A3A] font-semibold">BDT 18000/-</p> 
+                <p class="text-base text-[#B0B0B0] font-normal"><s>BDT 21000/-</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-sm">
+            <figure><img src="images/image_6.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#3A3A3A] text-2xl font-semibold">Muggo</h2>
+              <p class="text-base font-medium text-[#898989]">Small Mug</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-[#3A3A3A] font-semibold">BDT 25000/-</p> 
+                <p class="text-base text-[#B0B0B0] font-normal"><s>BDT 29000/-</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-sm">
+            <figure><img src="images/image_7.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#3A3A3A] text-2xl font-semibold">Pinkgy</h2>
+              <p class="text-base font-medium text-[#898989]">Stylish Cafe Chair</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-[#3A3A3A] font-semibold">BDT 25000/-</p> 
+                <p class="text-base text-[#B0B0B0] font-normal"><s>BDT 29000/-</s></p>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-sm">
+            <figure><img src="images/image_8.png" alt="" /></figure>
+            <div class="card-body">
+              <h2 class="card-title text-[#3A3A3A] text-2xl font-semibold">Potty</h2>
+              <p class="text-base font-medium text-[#898989]">Minimal Flower Pot</p>
+              <div class="card-actions justify-between">
+                <p class="text-xl text-[#3A3A3A] font-semibold">BDT 25000/-</p> 
+                <p class="text-base text-[#B0B0B0] font-normal"><s>BDT 29000/-</s></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center my-16">
+          <button class="btn btn-outline btn-warning w-44">See More</button>
+        </div>
+      </section>
+
+      <!-- Carousel or Slider Section -->
+      <section class="container mx-auto my-20 bg-[#FCF8F3]">
+        <div class="carousel w-full">
+
+          <div id="item1" class="carousel-item w-full px-5 flex gap-5 flex-col lg:flex-row justify-between items-center">
+            <div class="flex-1 slide-content">
+              <h2 class="text-4xl font-extrabold">50+ Beautiful rooms 
+              <br>  inspiration</h2>
+              <p class="text-base text-[#616161] font-medium my-8">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+              <button class="btn bg-[#B88E2F] text-white hover:text-black">Explore More</button>
+            </div>
+            <img src="images/slide_1_1.png" class="w-full flex-1" />
+            <img src="images/slide_1_2.png" class="w-full flex-1" />
+          </div> 
+          <div id="item2" class="carousel-item w-full px-5 flex gap-5 flex-col lg:flex-row justify-between items-center">
+            <div class="flex-1 slide-content">
+              <h2 class="text-4xl font-extrabold">Luxary Decoration 
+              <br>  inspiration</h2>
+              <p class="text-base text-[#616161] font-medium my-8">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+              <button class="btn bg-[#B88E2F] text-white hover:text-black">Explore More</button>
+            </div>
+            <img src="images/living.png" class="w-full flex-1" />
+            <img src="images/dining.png" class="w-full flex-1" />
+          </div> 
+          <div id="item3" class="carousel-item w-full px-5 flex gap-5 flex-col lg:flex-row justify-between items-center">
+            <div class="flex-1 slide-content">
+              <h2 class="text-4xl font-extrabold">Largly Space and Calm 
+              <br>  inspiration</h2>
+              <p class="text-base text-[#616161] font-medium my-8">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+              <button class="btn bg-[#B88E2F] text-white hover:text-black">Explore More</button>
+            </div>
+            <img src="images/image_4.png" class="w-full flex-1" />
+            <img src="images/image_7.png" class="w-full flex-1" />
+          </div> 
+          <div id="item4" class="carousel-item w-full px-5 flex gap-5 flex-col lg:flex-row justify-between items-center">
+            <div class="flex-1 slide-content">
+              <h2 class="text-4xl font-extrabold">Beautiful Living Kit 
+              <br>  inspiration</h2>
+              <p class="text-base text-[#616161] font-medium my-8">Our designer already made a lot of beautiful prototipe of rooms that inspire you</p>
+              <button class="btn bg-[#B88E2F] text-white hover:text-black">Explore More</button>
+            </div>
+            <img src="images/living.png" class="w-full flex-1" />
+            <img src="images/Image_5.png" class="w-full flex-1" />
+          </div> 
+        </div> 
+        <div class="flex justify-center w-full py-2 gap-2">
+          <a href="#item1" class="btn btn-xs">1</a> 
+          <a href="#item2" class="btn btn-xs">2</a> 
+          <a href="#item3" class="btn btn-xs">3</a> 
+          <a href="#item4" class="btn btn-xs">4</a>
+        </div>
+      </section>
+      <!-- Furniture Gallery -->
+
+      <section class="container mx-auto my-16">
+        <div class="text-center">
+          <h3 class="text-xl text-[#616161] font-semibold">Share Your Setup with</h3>
+          <h2 class="text-4xl text-[#3A3A3A] font-extrabold">#Furniro Furniture</h2>
+        </div>
+        <!-- Grid gallery -->
+         <div class="grid gap-5 grid-cols-1 lg:grid-cols-12 grid-rows-2 justify-evenly items-center mt-5">
+          <img class="lg:w-full self-end" src="images/gallery_img_1.png" alt="">
+          <img class="w-full lg:col-span-4 self-end" src="images/gallery_img_2.png" alt="">
+          <img class="w-full lg:col-span-3 lg:row-span-2 self-center" src="images/gallery_img_3.png" alt="">
+          <img class="w-full lg:col-span-2 self-end" src="images/gallery_img_4.png" alt="">
+          <img class="w-full lg:col-span-2 self-end self-stretch" src="images/gallery_img_6.png" alt="">
+          <img class="w-full lg:col-span-2 self-end" src="images/gallery_img_5.png" alt="">
+          <img class="w-full lg:col-span-3 self-start" src="images/gallery_img_7.png" alt="">
+          <img class="w-full lg:col-span-2 self-start self-stretch" src="images/gallery_img_8.png" alt="">
+          <img class="w-full lg:col-span-2 self-start" src="images/gallery_img_9.png" alt="">
+         </div>
+      </section>
+
+    </main>
+    <footer class="my-20">
+      <div class="container mx-auto">
+        <hr>
+        <div class="max-w-[1240px] mx-auto flex flex-col lg:flex-row justify-between px-5 my-8">
+          <div>
+            <h2 class="text-2xl font-bold pt-3 lg:pb-10">Funiro.</h2>
+            <p class="text-base text-[#9F9F9F] font-normal">400 University Drive Suite 200 Coral Gables,
+            <br>FL 33134 USA</p>
+          </div>
+          <div class="flex flex-col gap-8">
+            <h3 class="text-base text-[#9F9F9F] font-semibold pt-5 lg:pb-10">Links</h3>
+            <a href="index.html" class="text-base font-semibold text-black">Home</a>
+            <a href="index.html" class="text-base font-semibold text-black">Shop</a>
+            <a href="index.html" class="text-base font-semibold text-black">About</a>
+            <a href="index.html" class="text-base font-semibold text-black">Contact</a>
+          </div>
+          <div class="flex flex-col gap-8">
+            <h3 class="text-base text-[#9F9F9F] font-semibold pt-5 lg:pb-10">Help</h3>
+            <a href="index.html" class="text-base font-semibold text-black">Payment Option</a>
+            <a href="index.html" class="text-base font-semibold text-black">Returns</a>
+            <a href="index.html" class="text-base font-semibold text-black">Privacy Policies</a>
+          </div>
+          <div class="flex flex-col gap-8">
+            <h3 class="text-base text-[#9F9F9F] font-semibold pt-5 lg:pb-10">News Letter</h3>
+            <div class="flex gap-5 flex-col lg:flex-row justify-center items-center">
+              <input class="border-b-2 px-2 py-2 text-gray-950 mr-5" type="email" name="email" placeholder="Enter Your Email Address" id="">
+              <a class="py-2 border-b-2 text-black text-base uppercase font-semibold cursor-pointer">Subscribe</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <p class="text-base text-black font-normal pt-10 text-center">2024 Furino Furniture. All rights reverved || <a class="hover:underline" href="https://github.com/engrkamrulislambd">Engr. Kamrul Islam</a></p>
+      </div>
+    </footer>
+</body>
+</html>
